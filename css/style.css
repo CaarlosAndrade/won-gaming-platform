@@ -495,7 +495,6 @@ main{
     /* Grid Games */
 
 .card-game{
-  position: absolute;
   width: 293px;
   height: 217px;
   background: var(--white);
@@ -549,7 +548,16 @@ main{
   color: var(--white);
 }
 
+/* Grid Card Games */
 
+.container-cards{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-
+.card-game{
+  margin-bottom: 4.6rem;
+}
 
