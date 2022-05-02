@@ -54,7 +54,7 @@ button{
   font-weight: 500;
 }
 
-.button-gradiente{
+.button-gradient{
   border: none;
   background: var(--gradient-pink-button);
   color: white;
@@ -256,6 +256,7 @@ a:visited{
   width: 100%;
   height: 5rem;
   margin-bottom: 1.7rem;
+  margin-top: 3rem;
 }
 
 .login-container .forgot-password{
