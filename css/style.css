@@ -429,6 +429,31 @@ main{
   border-right: .8rem solid transparent;
 }
 
+    /* Banner Navigation */
+.banner-navigation{
+  position: absolute;
+  right: 10rem;
+  top: 37rem;
+}
+
+.banner-navigation ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 8.1rem;
+  justify-content: space-between;
+}
+
+.item-navigation{
+  width: 1rem;
+  height: 1rem;
+  background: var(--white);
+  border-radius: 50%
+}
+
+.active-item{
+  background: var(--pink);
+}
 
 
 
