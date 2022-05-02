@@ -150,6 +150,20 @@ a:visited{
   url("../images/big-banner-games/banner-red-dead.png") no-repeat;
  }
 
+ .banner-borderlands{
+  background:
+  linear-gradient(
+    
+    rgba(0,0,0,.8),rgba(0,0,0,.8)
+  ),
+  url("../images/big-banner-games/banner-borderlands.png") no-repeat;
+ }
+ 
+
+ .invert-banner{
+   flex-direction: row-reverse !important;
+ }
+
 
 /* ICONS */
 
@@ -597,12 +611,24 @@ main{
   margin-bottom: 4.6rem;
 }
 
-.slide-button-rigth{
+.slide-button{
   display: inline-block;
   position: absolute;
   z-index: 99;
+}
+
+.right-button{
   right: -5rem;
   top: 8.2rem;
+}
+
+.left-button{
+  left: -5rem;
+  top: 8.2rem;
+}
+
+.invert{
+  transform: scaleX(-1);
 }
 
 /* Game big Banner */
@@ -634,6 +660,12 @@ main{
 
 }
 
+/* Upcoming Section */
+
+.invert-banner .game-banner-content{
+  margin: 0  0 4.9rem 4.9rem;
+  align-items: flex-start;
+}
 
 
 
