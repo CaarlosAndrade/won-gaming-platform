@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 :root{
@@ -13,7 +14,9 @@
   --black: #030517;
   
   --gray: #EAEAEA;
+  --gray-dark: #BBBBBB;
   --green-dark: #35BDAC;
+  --green-light: #3CD3C1;
   --pink: #F231A5;
 
 
@@ -27,6 +30,7 @@ html {
   font-family: 'Poppins', sans-serif;
   color: var(--white);
 }
+
 
 h1{
   font-size: 5.1rem;
@@ -87,6 +91,17 @@ a:visited{
   margin-bottom: -1rem;
 }
 
+
+.shape-background{
+  width: 100%;
+  height: 55.5rem;
+  background: var(--white);
+  position: absolute;
+  z-index: 0;
+  top: 60rem;
+  clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 83%);
+}
+
 .container{
   display: flex; 
   width: 75%;
@@ -95,6 +110,10 @@ a:visited{
 
 .text-pink{
   color: var(--pink);
+}
+
+.text-black{
+  color: var(--black);
 }
 
 .title-section{
@@ -450,8 +469,8 @@ main{
 
 .banner-navigation{
   position: absolute;
-  right: 10rem;
-  top: 37rem;
+  right: -7rem;
+  top: 24rem;
 }
 
 .banner-navigation ul{
@@ -475,6 +494,60 @@ main{
 
     /* Grid Games */
 
+.card-game{
+  position: absolute;
+  width: 293px;
+  height: 217px;
+  background: var(--white);
+  filter: drop-shadow(0px 1px 5px rgba(3, 5, 23, 0.05));
+}
+
+.card-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.2rem 0 1.6rem;
+}
+
+.card-content div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-content h3{
+  color: var(--black);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card-content p{
+  font-size: 1.2rem;
+  color: var(--gray-dark);
+  font-weight: 700;
+}
+
+.card-content div:nth-child(2){
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.card-content .game-price{
+  width: 78px;
+  height: 22px;
+  margin-top: .9rem;
+  background-color: var(--green-light);
+  border-radius: .2rem;
+}
+
+.card-content .game-price p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--white);
+}
 
 
 
