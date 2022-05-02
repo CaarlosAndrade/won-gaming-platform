@@ -34,7 +34,7 @@ h1{
 }
 
 h2{
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   font-weight: 600;
 }
 
@@ -88,14 +88,24 @@ a:visited{
 }
 
 .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
   width: 75%;
+  flex-direction: column;
 }
 
 .text-pink{
   color: var(--pink);
+}
+
+.title-section::before{
+  content: '';
+  width: .5rem;
+  height: 2.6rem;
+  margin-bottom: -.3rem;
+  margin-right: 1.1rem;
+  background-color: var(--green-dark);
+  display: inline-block;
+
 }
 
 /* ICONS */
