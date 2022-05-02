@@ -597,6 +597,14 @@ main{
   margin-bottom: 4.6rem;
 }
 
+.slide-button-rigth{
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
+  right: -5rem;
+  top: 8.2rem;
+}
+
 /* Game big Banner */
 
 .game-banner{
@@ -604,6 +612,7 @@ main{
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 3.2rem;
 }
 
 .game-banner-content{
