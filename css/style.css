@@ -1,5 +1,5 @@
 /* importação das fontes  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); /* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); /* font-family: 'Poppins', sans-serif; */
 
 /* Reset CSS */
 * {
@@ -116,6 +116,10 @@ a:visited{
   color: var(--black);
 }
 
+.m-4{
+  margin-top: 6rem;
+}
+
 .title-section{
   margin-bottom: 3.2rem;
 }
@@ -130,6 +134,17 @@ a:visited{
   display: inline-block;
 
 }
+/* Banners  */
+
+.banner-red-dead{
+  background:
+  linear-gradient(
+    
+    rgba(0,0,0,.8),rgba(0,0,0,.8)
+  ),
+  url("../images/big-banner-games/banner-red-dead.png") no-repeat;
+ }
+
 
 /* ICONS */
 
@@ -198,10 +213,6 @@ a:visited{
 
 .login-logo{
   margin: 5.6rem 0 0 5.5rem;
-}
-
-.title-login{
-  color: var(--black);
 }
 
 .login-content{
@@ -408,7 +419,7 @@ main{
   width: 100%;
   height: 20rem;
   position: relative;
-  top: -20rem;
+  top: -22rem;
   margin-bottom: -20rem;
   padding: 3.1rem 4.4rem 0 4.4rem;
   background-color: rgba(0, 0, 0, 0.7);;
@@ -548,7 +559,7 @@ main{
   color: var(--white);
 }
 
-/* Grid Card Games */
+/* Card Games */
 
 .container-cards{
   display: flex;
@@ -560,4 +571,39 @@ main{
 .card-game{
   margin-bottom: 4.6rem;
 }
+
+
+/* Game big Banner */
+
+.game-banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.game-banner-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 4.9rem 4.9rem 0;
+}
+
+.game-banner-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.game-banner-content button{
+  margin-top: 2.3rem;
+  width: 16.9rem;
+  height: 3.9rem;
+
+}
+
+
+
+
+
+
 
