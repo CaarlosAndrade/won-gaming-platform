@@ -109,16 +109,34 @@ a:visited{
 }
 
 .ic-email {
-  background: url("../icons/ic_email.svg");
+  background: url("../icons/ic-email.svg");
 }
 
 .ic-password {
-  background: url("../icons/ic_password.svg");
+  background: url("../icons/ic-password.svg");
 }
 
-.ic-user{
-  background: url("../icons/ic-user.svg");
+.ic-user-light{
+  background: url("../icons/ic-user-light.svg");
 }
+
+.ic-user-dark{
+  background: url("../icons/ic-user-dark.svg");
+}
+
+.ic-search{
+  background: url("../icons/ic-search.svg");
+}
+
+.ic-cart{
+  background: url("../icons/ic-cart.svg");
+}
+
+.ic-arrow-donw{
+  background: url("../icons/ic-arrow-donw.svg");
+}
+
+
 
 /* LOGIN */
 
@@ -144,6 +162,10 @@ a:visited{
 
 .login-logo{
   margin: 5.6rem 0 0 5.5rem;
+}
+
+.title-login{
+  color: var(--black);
 }
 
 .login-content{
