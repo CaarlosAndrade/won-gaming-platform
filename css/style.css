@@ -158,6 +158,15 @@ a:visited{
   ),
   url("../images/big-banner-games/banner-borderlands.png") no-repeat;
  }
+
+ .banner-cs-go{
+  background:
+  linear-gradient(
+    
+    rgba(0,0,0,.8),rgba(0,0,0,.8)
+  ),
+  url("../images/big-banner-games/banner-cs-go.png") no-repeat;
+ }
  
 
  .invert-banner{
@@ -563,7 +572,7 @@ main{
 .card-content-right{
   display: flex;
   align-items: flex-end;
-  justify-content: end;
+  justify-content: start;
   flex-direction: column;
 }
 
