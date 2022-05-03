@@ -97,6 +97,12 @@ a:visited {
   margin-bottom: -1rem;
 }
 
+hr{
+  height: 0;
+  border: .01rem solid #2B2C34;
+  margin: 2.4rem 0 ;
+}
+
 
 .shape-background {
   width: 100%;
@@ -214,6 +220,10 @@ a:visited {
 
 .ic-heart {
   background: url("../icons/ic-heart.svg") no-repeat;
+}
+
+.ic-search-bar{
+  background: url('../icons/ic-search-bar.svg') no-repeat;
 }
 
 
@@ -774,7 +784,7 @@ footer {
   text-transform: uppercase;
 }
 
-.grid-footer>div>h3::before {
+.title-marker::before {
   content: '';
   width: 2.2rem;
   height: .3rem;
@@ -812,6 +822,10 @@ footer p {
 
 /* STORE */
 
+.store .container{
+  min-width: 88%;
+}
+
 .grid-store {
   width: 100%;
   display: grid;
@@ -819,6 +833,7 @@ footer p {
   grid-template-rows: auto repeat(4, 1fr);
   grid-column-gap: 3rem;
   grid-row-gap: 0px;
+  margin-top: 13rem;
 }
 
 .grid-store-form-menu {
@@ -856,6 +871,8 @@ footer p {
   font-weight: 400;
 }
 
+/* Input Checkbox */
+
 .grid-store label input[type="checkbox"]{
   height: 1.8rem;
   width: 1.8rem;
@@ -877,7 +894,6 @@ footer p {
 
 .grid-store label input[type="checkbox"]::after{
   content: url("../icons/ic-check.svg");
-  
   display: none;
 }
 
@@ -888,6 +904,77 @@ footer p {
 
 .grid-store label input[type="checkbox"]:checked::after{
   display: block;
+}
+
+/* Input Radio */
+
+.grid-store label input[type="radio"]{
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 0 1.2rem 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+
+  accent-color: var(--pink);
+  border: 2px solid var(--gray-input);
+  border-radius: 50%;
+  
+}
+
+.grid-store label input[type="radio"]::after{
+  display: none;
+}
+
+.grid-store label input[type="radio"]:checked{
+  background-color: var(--pink); 
+  border: none;
+}
+
+.grid-store label input[type="radio"]:checked::after{
+  display: block;
+}
+
+legend{
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.7rem;
+}
+
+
+/* search bar */
+
+.container-cards{
+  margin-top: 2.1rem;
+}
+
+.search-bar-input{
+  width: 29.3rem;
+  height: 4rem;
+  background-color: var(--gray-input);
+  border: none;
+  border-radius: .2rem;
+  padding: 1.2rem;
+  outline: none;
+  color: var(--white);
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+}
+
+.search-bar i{
+  width: 1.7rem;
+  height: 1.7rem;
+  
+  position: relative;
+  left: -3rem;
 }
 
 
