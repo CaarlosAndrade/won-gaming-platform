@@ -830,7 +830,7 @@ footer p {
   width: 100%;
   display: grid;
   grid-template-columns: .2fr 1fr;
-  grid-template-rows: auto repeat(4, 1fr);
+  grid-template-rows: auto repeat(3, 1fr) auto;
   grid-column-gap: 3rem;
   grid-row-gap: 0px;
   margin-top: 13rem;
@@ -975,6 +975,18 @@ legend{
   
   position: relative;
   left: -3rem;
+}
+
+.grid-store-show-more{
+  height: 7.4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-store-show-more h3{
+  margin-bottom: 1rem;
 }
 
 
